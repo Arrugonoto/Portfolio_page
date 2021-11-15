@@ -109,7 +109,7 @@ h4 {
       margin: 0px;
       padding: 2rem 1.8rem 1.6rem 1.8rem;
       border-bottom: 2px solid rgba(0, 0, 0, 0);
-      transition: color .3s ease-in-out;
+      transition: color .2s ease-in-out;
       &:hover {
         color: var(--btn-cyan);
         }
@@ -142,15 +142,15 @@ h4 {
      color: rgb(7, 120, 39);
      transition: transform .2s linear;
      transform: scale(1.3) translateY(-3px);
-   }
+    }
    .fa-codepen:hover {
      color: rgb(28, 199, 214);
      transform: scale(1.3) translateY(-3px);
-   }
+    }
    .fa-github:hover {
      color: rgb(28, 199, 214);
      transform: scale(1.3) translateY(-3px);
-   }
+    }
     .fa-linkedin:hover {
       color: #0077b5;
       transform: scale(1.3) translateY(-3px);
@@ -158,8 +158,8 @@ h4 {
    .fa-facebook:hover {
      color: rgb(28, 123, 201);
      transform: scale(1.3) translateY(-3px);
-   }
- }
+    }
+  }
 }
 
 
@@ -585,6 +585,7 @@ h4 {
       }
       .card-description {
         display: flex;
+        flex-direction: column;
         position: absolute;
         z-index: 2;
         left: 0;
@@ -626,6 +627,29 @@ h4 {
       }
       .fa-js {
        color: #f0db4f;
+      }
+    }
+  }
+  .card-description {
+    .project-links-container {
+      position: relative;
+      top: 62%;
+      color: #fff;
+      .project-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 1rem;
+        font-size: 3.4rem;
+      }
+    }
+    a {
+      margin: 0 .5rem;
+      text-decoration: none;
+      color: #fff;
+      transition: color .2s ease-in-out;
+      &:hover {
+        color: rgb(206, 206, 206);
       }
     }
   }
